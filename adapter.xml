@@ -29,7 +29,36 @@
       <produce-connection class="null-connection">
         <unique-id>agitated-franklin</unique-id>
       </produce-connection>
-      <workflow-list/>
+      <workflow-list>
+        <standard-workflow>
+          <consumer class="null-message-consumer">
+            <unique-id>angry-volhard</unique-id>
+          </consumer>
+          <service-collection class="service-list">
+            <unique-id>elegant-torvalds</unique-id>
+            <services>
+              <aggregating-fs-consume-service>
+                <unique-id>furious-bassi</unique-id>
+                <fs-consumer>
+                  <message-aggregator class="xml-document-aggregator">
+                    <merge-implementation class="xml-insert-node">
+                      <xpath-to-parent-node>//root</xpath-to-parent-node>
+                    </merge-implementation>
+                  </message-aggregator>
+                  <destination class="consume-destination-from-metadata">
+                    <destination-metadata-key>temp</destination-metadata-key>
+                  </destination>
+                </fs-consumer>
+              </aggregating-fs-consume-service>
+            </services>
+          </service-collection>
+          <producer class="null-message-producer">
+            <unique-id>small-goldberg</unique-id>
+          </producer>
+          <produce-exception-handler class="null-produce-exception-handler"/>
+          <unique-id>high-bhabha</unique-id>
+        </standard-workflow>
+      </workflow-list>
       <unique-id>sleepy-gates</unique-id>
     </channel>
   </channel-list>
